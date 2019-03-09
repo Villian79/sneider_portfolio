@@ -1,0 +1,22 @@
+{
+  "name": "sneider_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project for Sneider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Villian79/sneider_portfolio.git"
+  },
+  "author": "Igor Vilinchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Villian79/sneider_portfolio/issues"
+  },
+  "homepage": "https://github.com/Villian79/sneider_portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
