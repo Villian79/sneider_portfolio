@@ -6,52 +6,105 @@
   <title>Sneider Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   <script src="main.js"></script>
 </head>
 <body>
+  <!-- Hamburger navigation -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Your benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Popular tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  <!-- End of Hamburger navigation -->
+
+
   <div class="page-header__wrapper page-header__wrapper--background-none">
     <header class="page-header">
       <div class="page-header__block">
         <a href="#" class="page-header__logo">
           <p>Sneider</p>
         </a>
-        <address class="page-header__address">
+        <div class="page-header__address">
           <div class="page-header__address-item">
             <a class="page-header__address-link" href="tel:+38 067 123 1234">+38 067 123 1234</a>
           </div>
-        </address>
+        </div>
       </div>
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Your benefits</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Popular tours</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Stories</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Book Now</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <div class="page-header__block">
+        <div class="page-header__item">
+          <a href="#" class="page-header__icon"><i class="far fa-address-card fa-lg"></i></a>
+          <span>Регистрация</span>
+        </div>
+        <div class="page-header__item">
+          <a href="#" class="page-header__icon"><i class="fas fa-unlock-alt fa-lg"></i></a>
+          <span>Вход</span>
+        </div>
+        <div class="page-header__item">
+          <a href="#" class="page-header__icon"><i class="fas fa-search-location"></i></a>
+        </div>      
+      </div>  
     </header>
-  </div>
-  
 
+    <nav class="tile__nav">
+      <ul class="tile__list">
+        <li class="tile__item">
+          <a href="#" class="tile__link">
+            <i class="far fa-list-alt fa-lg"></i>
+            <p>SEO</p>
+          </a>
+        </li>
+        <li class="tile__item">
+          <a href="#" class="tile__link">
+            <i class="far fa-edit fa-lg"></i>
+            <p>Копірайт</p>
+          </a>
+        </li>
+        <li class="tile__item">
+          <a href="#" class="tile__link">
+            <i class="far fa-clock fa-lg"></i>
+            <p>Оптимізація</p>
+          </a>
+        </li>
+        <li class="tile__item">
+          <a href="#" class="tile__link">
+            <i class="fas fa-code fa-lg"></i>
+            <p>Розробка</p>
+          </a>
+        </li>
+        <li class="tile__item">
+          <a href="#" class="tile__link">
+            <i class="far fa-comment-dots fa-lg"></i>
+            <p>Наші контакти</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  
   <!-- Background slider -->
   <ul class="cb-slideshow">
     <li>
