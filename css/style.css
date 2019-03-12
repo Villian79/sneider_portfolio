@@ -1,3 +1,18 @@
+/* 
+0-600px      -- phone
+600px-900px  -- Tablet portrait
+900px-1200px -- Tablet landscape
+1200px-1800px-- Normal desktops
+1800px +     -- Big desktops
+
+Breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +23,15 @@
 /* Set default font size to 10px if the browser initial font size is 16px */
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -115,7 +139,6 @@ a {
 .page-header {
   padding: 3.6rem 0 6.8rem 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
   .page-header__wrapper {
@@ -144,6 +167,9 @@ a {
     color: #fff;
     font-weight: 700;
     padding: 0 5rem; }
+    @media (max-width: 56.25em) {
+      .page-header__address-link {
+        display: none; } }
   .page-header__item {
     display: flex;
     align-items: center;
@@ -151,6 +177,9 @@ a {
     position: relative; }
     .page-header__item span {
       padding: 0 2rem; }
+      @media (max-width: 37.5em) {
+        .page-header__item span {
+          display: none; } }
   .page-header__icon {
     background-color: transparent;
     border-radius: 50%;
@@ -280,15 +309,26 @@ a {
 .tile__nav {
   width: 70%;
   padding-top: 20rem; }
+  @media (max-width: 56.25em) {
+    .tile__nav {
+      width: 100%;
+      padding-top: 3rem; } }
 
 .tile__list {
   list-style: none;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .tile__item {
   width: 20%;
   height: 8rem;
   position: relative; }
+  @media (max-width: 75em) {
+    .tile__item {
+      width: 33.3%; } }
+  @media (max-width: 37.5em) {
+    .tile__item {
+      width: 100%; } }
   .tile__item:nth-child(1), .tile__item:nth-child(3) {
     background-color: #caf200; }
   .tile__item:nth-child(1):hover {
@@ -344,10 +384,19 @@ a {
     bottom: 4.5rem;
     transform-origin: bottom;
     transition: all .5s; }
+    @media (max-width: 37.5em) {
+      .tile__link i {
+        font-size: 300%;
+        bottom: 2.5rem; } }
   .tile__link p {
     position: absolute;
     left: 2rem;
     bottom: .5rem; }
+    @media (max-width: 37.5em) {
+      .tile__link p {
+        position: relative;
+        padding: 1rem 1rem 0 6rem;
+        font-size: 3rem; } }
   .tile__link:hover {
     color: #fff; }
     .tile__link:hover i {
@@ -362,9 +411,20 @@ a {
   padding: 0 4rem;
   height: 8rem;
   background: rgba(0, 0, 0, 0.4); }
+  @media (max-width: 56.25em) {
+    .footer {
+      height: 16rem; } }
   .footer__box {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 56.25em) {
+      .footer__box {
+        display: block; } }
+  .footer__item {
+    text-align: center; }
+    @media (max-width: 56.25em) {
+      .footer__item {
+        padding-top: 3rem; } }
