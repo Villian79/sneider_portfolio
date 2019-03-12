@@ -91,6 +91,27 @@ a {
 .no-cssanimations .cb-slideshow li span {
   opacity: 1; }
 
+.social__link {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin: 0 1rem; }
+  .social__link a {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block; }
+    .social__link a p {
+      margin-top: .5rem; }
+  .social__link--facebook:hover {
+    background-color: #002fff; }
+  .social__link--twitter:hover {
+    background-color: #68b7f7; }
+  .social__link--instagram:hover {
+    background-color: #f11010; }
+
 .page-header {
   padding: 3.6rem 0 6.8rem 0;
   display: flex;
@@ -331,3 +352,19 @@ a {
     color: #fff; }
     .tile__link:hover i {
       font-size: 400%; }
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 100vw;
+  padding: 0 4rem;
+  height: 8rem;
+  background: rgba(0, 0, 0, 0.4); }
+  .footer__box {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center; }
